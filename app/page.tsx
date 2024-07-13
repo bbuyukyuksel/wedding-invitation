@@ -1,27 +1,39 @@
+"use client";
+import Head from "next/head";
 import Image from "next/image";
+import Layout from "@/components/Layout/Layout";
+// import Resepsi from '../public/assets/icons/resepsi.svg';
+import HeaderMobile from "@/components/Section/HeaderMobile";
+import Header from "@/components/Section/Header";
+import Detail from "@/components/Section/Detail";
+import MusicPlayer from "@/components/Shared/MusicPlayer";
+import Location from "../public/assets/icons/location.svg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center center justify-center font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Nurila & Burak &nbsp;
-          <code className="font-mono font-bold">Yapım Aşamasındayız!</code>
-        </p>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/wedding.png"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left"></div>
-    </main>
+    <div>
+      {/* Header Mobile */}
+      <section
+        id="beranda"
+        className="flex lg:hidden bg-cover bg-center  w-full h-screen  items-start py-14"
+        style={{ backgroundImage: "url(/assets/prewedding-home.jpeg)" }}
+      >
+        <div className="flex flex-col  w-full relative">
+          <div className="absolute h-full w-full bg-dark-450 bg-blur-2px"></div>
+          <div className="flex flex-col w-full text-white text-center h-auto  px-8 py-3.5 z-10">
+            <p className="font-habibi ">Düğünümüz Var!</p>
+            <h4 className="font-great-vibes text-5xl mb-4 mt-6">
+              Nurila & Burak
+            </h4>
+            <p className="font-habibi ">01 Januari 2021</p>
+          </div>
+        </div>
+      </section>
+      {/* End Header Mobile */}
+      <MusicPlayer />
+      <HeaderMobile />
+      <Header />
+      <Detail />
+    </div>
   );
 }
