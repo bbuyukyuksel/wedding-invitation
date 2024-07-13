@@ -8,8 +8,9 @@ const HeaderMobile = () => {
       id="beranda"
       className="flex lg:hidden w-full h-screen items-center justify-center py-14 relative"
     >
+      <ConfettiEffect run={true} />
       {/* ConfettiEffect bileşenini düzgün bir şekilde çağırın */}
-      <div className="absolute inset-0 bg-dark-450 border-2 border-blue-500">
+      <div className="absolute inset-0">
         <div className="flex flex-col w-full text-white text-center h-auto px-8 py-3.5 z-10 justify-center items-center relative">
           <p className="font-habibi text-xl py-5">Davetlisiniz...</p>
           <h4 className="font-great-vibes text-5xl mb-4 mt-6 py-10">
@@ -22,7 +23,7 @@ const HeaderMobile = () => {
             <CountdownTimer />
           </p>
         </div>
-        <ConfettiEffect run={true} />
+
         <Image
           src="/assets/prewedding-home.jpeg"
           alt="Background Image"

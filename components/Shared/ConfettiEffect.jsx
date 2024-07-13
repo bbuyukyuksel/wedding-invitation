@@ -20,7 +20,13 @@ const ConfettiEffect = ({ run }) => {
   }, []);
 
   return run ? (
-    <Confetti width={windowSize.width} height={windowSize.height} />
+    <Confetti
+      width={windowSize.width}
+      height={windowSize.height}
+      colors={["#fff", "#000"]}
+      wind={0.1}
+      gravity={0.1}
+    />
   ) : null;
 };
 
