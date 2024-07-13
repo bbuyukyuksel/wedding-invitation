@@ -66,7 +66,7 @@ const MusicPlayer = () => {
     <div className="fixed bottom-4 left-4 flex items-center">
       <audio ref={audioRef} src="/assets/music/bg_music.mp3" loop />
       <button
-        className="p-2 bg-blue-500 text-white rounded-full shadow-lg"
+        className="p-2 bg-gray-700 text-white rounded-full shadow-lg"
         onClick={togglePlayPause}
         onMouseDown={handleInteraction} // Kullanıcı fare ile butona tıkladığında etkileşime geçildi olarak kabul edilir.
         onTouchStart={handleInteraction} // Kullanıcı dokunmatik ekran ile butona tıkladığında etkileşime geçildi olarak kabul edilir.

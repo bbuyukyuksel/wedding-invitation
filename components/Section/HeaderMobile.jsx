@@ -1,19 +1,36 @@
+import CountdownTimer from "@/components/Shared/CountdownTimer";
+import ConfettiEffect from "@/components/Shared/ConfettiEffect";
+import Image from "next/image";
+
 const HeaderMobile = () => {
   return (
     <section
       id="beranda"
-      className="flex lg:hidden bg-cover bg-center  w-full h-screen  items-start py-14"
-      style={{ backgroundImage: "url(/assets/prewedding-home.png)" }}
+      className="flex lg:hidden w-full h-screen items-center justify-center py-14 relative"
     >
-      <div className="flex flex-col  w-full relative">
-        <div className="absolute h-full w-full bg-dark-450 bg-blur-2px"></div>
-        <div className="flex flex-col w-full text-white text-center h-auto  px-8 py-3.5 z-10">
-          <p className="font-habibi ">Düğünümüz Var!</p>
-          <h4 className="font-great-vibes text-5xl mb-4 mt-6">
+      {/* ConfettiEffect bileşenini düzgün bir şekilde çağırın */}
+      <div className="absolute inset-0 bg-dark-450 border-2 border-blue-500">
+        <div className="flex flex-col w-full text-white text-center h-auto px-8 py-3.5 z-10 justify-center items-center relative">
+          <p className="font-habibi text-xl py-5">Davetlisiniz...</p>
+          <h4 className="font-great-vibes text-5xl mb-4 mt-6 py-10">
             Nurila & Burak
           </h4>
-          <p className="font-habibi ">01 Januari 2021</p>
+          <p className="font-habibi text-xl">
+            31 Ağustos 2024 <br />
+          </p>
+          <p>
+            <CountdownTimer />
+          </p>
         </div>
+        <ConfettiEffect run={true} />
+        <Image
+          src="/assets/prewedding-home.jpeg"
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          style={{ filter: "blur(4px)" }}
+        />
       </div>
     </section>
   );

@@ -20,7 +20,7 @@ const Detail = () => {
         </div>
       </div>
 
-      <div className="flex flex-col mx-auto h-40 lg:h-full items-center justify-center w-full px-8">
+      <div className="flex flex-col mx-auto h-40 lg:h-full items-center justify-center w-full px-8 mt-20">
         <div className="flex flex-col md:flex-row w-full">
           <div className="flex w-full my-2 h-16 lg:h-20 md:justify-center">
             <Image
@@ -93,12 +93,12 @@ const Detail = () => {
 
         <p className="hidden md:block mt-12 lg:mt-auto mx-auto text-lg text-white font-habibi"></p>
       </div>
-      <div className="flex mx-auto h-32 lg:h-full items-start lg:items-end justify-start w-full px-8">
+      <div className="flex mx-auto h-32 lg:h-full items-start lg:items-end justify-start w-full px-8 mt-20">
         <Link
           className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white font-habibi text-sm md:text-base"
           href="https://maps.app.goo.gl/ptJF5UbNHwDYGoJm7"
         >
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 h-auto">
             <Image
               src="/assets/icons/location.svg"
               alt="ring"
