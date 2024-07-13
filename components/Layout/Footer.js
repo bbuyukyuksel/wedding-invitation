@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import Home from "../../public/assets/icons/home.svg";
 import Calender from "../../public/assets/icons/calender.svg";
 import Gallery from "../../public/assets/icons/gallery.svg";

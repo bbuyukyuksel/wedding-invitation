@@ -1,4 +1,6 @@
 import Image from "next/image";
+import CountdownTimer from "@/components/Shared/CountdownTimer";
+import ConfettiEffect from "@/components/Shared/ConfettiEffect";
 
 const Header = () => {
   return (
@@ -7,10 +9,13 @@ const Header = () => {
       className="hidden lg:grid bg-dark-500 py-14 lg:py-0 mb:pb-6 grid-flow-col grid-cols-2 gap-4 row-span-4 h-screen"
     >
       <div className="flex flex-col text-white px-8 pb-20 pt-28 justify-end">
+        <ConfettiEffect run={true} />
+
         <div className="flex flex-col text-center my-auto">
           <p>
             “Bu mutlu günümüzde, mutluluğumuzu paylaşmak adına düğün törenimize
             sizleri de bekliyoruz.”
+            <CountdownTimer />
           </p>
         </div>
         <div className="flex flex-col ">
@@ -23,7 +28,12 @@ const Header = () => {
       <div className="flex w-full relative">
         <Image
           src="/assets/prewedding-home.jpeg"
-          style={{ filter: "blur(4px)" }}
+          style={{
+            filter: "blur(4px)",
+
+            borderRadius: "50%",
+            boxShadow: "0 0 5px red",
+          }}
           alt="Picture of the author"
           layout="fill"
           objectFit="cover"

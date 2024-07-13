@@ -1,5 +1,4 @@
-"use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import Ring from "@/public/assets/icons/ring.svg";
 import Location from "@/public/assets/icons/ring.svg";
@@ -95,17 +94,21 @@ const Detail = () => {
         <p className="hidden md:block mt-12 lg:mt-auto mx-auto text-lg text-white font-habibi"></p>
       </div>
       <div className="flex mx-auto h-32 lg:h-full items-start lg:items-end justify-start w-full px-8">
-        <button className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white font-habibi text-sm md:text-base">
-          {/* <Location className="h-8 md:h-10 w-8 md:w-10 mr-4" /> */}
-          <Image
-            src="/assets/icons/location.svg"
-            alt="ring"
-            width={100}
-            height={100}
-            className="h-6 md:h-8 w-6 md:w-8 mr-4 justify-between"
-          />
-          Konum
-        </button>
+        <Link
+          className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white font-habibi text-sm md:text-base"
+          href="https://maps.app.goo.gl/ptJF5UbNHwDYGoJm7"
+        >
+          <div className="flex items-center space-x-4">
+            <Image
+              src="/assets/icons/location.svg"
+              alt="ring"
+              width={100}
+              height={100}
+              className="h-12 w-8 md:h-10 md:w-6"
+            />
+            <p className="text-xl">Konum</p>
+          </div>
+        </Link>
       </div>
     </section>
   );
