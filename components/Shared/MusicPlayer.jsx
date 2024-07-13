@@ -24,7 +24,7 @@ const MusicPlayer = () => {
             .catch((error) => {
               console.log("Autoplay was prevented:", error);
               ok = false;
-              timeoutIdRef.current = setTimeout(playMusic, 1000); // 1 saniye sonra müziği çalmayı dene
+              timeoutIdRef.current = setTimeout(playMusic, 200); // 1 saniye sonra müziği çalmayı dene
             });
         }
         if (ok === true) {
@@ -33,7 +33,7 @@ const MusicPlayer = () => {
       }
     };
 
-    timeoutIdRef.current = setTimeout(playMusic, 1000); // 1 saniye sonra müziği çalmayı dene
+    timeoutIdRef.current = setTimeout(playMusic, 200); // 1 saniye sonra müziği çalmayı dene
 
     return () => {
       if (timeoutIdRef.current) {

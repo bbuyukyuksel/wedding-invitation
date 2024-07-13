@@ -12,7 +12,7 @@ const Detail = () => {
       <div className="flex flex-col  w-full relative lg:h-full">
         <div className="absolute h-full w-full bg-dark-450 bg-blur-2px lg:hidden"></div>
         <div className="flex flex-col w-full text-white text-center h-auto  px-8 py-3.5 z-10 lg:my-auto">
-          <p className="font-habibi lg:hidden">Düğün</p>
+          <p className="font-habibi lg:hidden">Program</p>
           <h4 className="font-great-vibes text-5xl lg:text-7xl mb-4 mt-6 ">
             Nurila & Burak
           </h4>
@@ -37,20 +37,6 @@ const Detail = () => {
 
           <div className="flex w-full my-2 h-16 lg:h-20 md:justify-center">
             <Image
-              src="/assets/icons/coctail.svg"
-              alt="ring"
-              width={100}
-              height={100}
-            />
-            {/* <Ring className="h-12 md:h-16 w-12 md:w-16  mr-6 my-auto" /> */}
-            <div className="flex flex-col text-white font-habibi justify-between h-full">
-              <p className="text-base md:text-lg lg:text-3xl">Kokteyl </p>
-              <p className="text-xs md:text-base lg:text-lg">19:00</p>
-            </div>
-          </div>
-
-          <div className="flex w-full my-2 h-16 lg:h-20 md:justify-center">
-            <Image
               src="/assets/icons/ring.svg"
               alt="ring"
               width={100}
@@ -59,7 +45,7 @@ const Detail = () => {
             {/* <Ring className="h-12 md:h-16 w-12 md:w-16  mr-6 my-auto" /> */}
             <div className="flex flex-col text-white font-habibi justify-between h-full">
               <p className="text-base md:text-lg lg:text-3xl">Nikah </p>
-              <p className="text-xs md:text-base lg:text-lg">19:30</p>
+              <p className="text-xs md:text-base lg:text-lg">19:00</p>
             </div>
           </div>
 

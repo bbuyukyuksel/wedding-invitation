@@ -7,11 +7,10 @@ import HeaderMobile from "@/components/Section/HeaderMobile";
 import Header from "@/components/Section/Header";
 import Detail from "@/components/Section/Detail";
 import MusicPlayer from "@/components/Shared/MusicPlayer";
-import Location from "../public/assets/icons/location.svg";
 
 export default function Home() {
   return (
-    <div>
+    <div style={{ backgroundColor: "black" }}>
       <MusicPlayer />
       <HeaderMobile />
       <Header />
