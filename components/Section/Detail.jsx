@@ -1,7 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Ring from "@/public/assets/icons/ring.svg";
-import Location from "@/public/assets/icons/ring.svg";
 
 const Detail = () => {
   return (
@@ -79,6 +77,7 @@ const Detail = () => {
 
         <p className="hidden md:block mt-12 lg:mt-auto mx-auto text-lg text-white font-habibi"></p>
       </div>
+
       <div className="flex mx-auto h-32 lg:h-full items-start lg:items-end justify-start w-full px-8 mt-20">
         <Link
           className="mt-6 px-6 md:px-12 py-2 md:py-3 flex justify-center items-center border-white border rounded-l-full rounded-r-full mx-auto text-white font-habibi text-sm md:text-base"
