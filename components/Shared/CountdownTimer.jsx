@@ -37,7 +37,7 @@ const CountdownTimer = () => {
 
     timerComponents.push(
       <span key={interval} className="font-great-vibes">
-        {timeLeft[interval]} {interval}{" "}
+        {timeLeft[interval]} {interval} &nbsp;
       </span>
     );
   });
